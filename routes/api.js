@@ -1,6 +1,7 @@
 "use strict";
 const StockModel = require("../models").Stock;
 const bcrypt = require("bcrypt");
+// const fetch = (url) => import('node-fetch').then(({default: fetch}) => fetch(url));
 
 async function createStock(stock, like, ip) {
   const hashIP = bcrypt.hashSync(ip, 12);
